@@ -99,6 +99,13 @@ button {
   cursor: pointer;
 }
 
+.nonselect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 /***********************************/
 .body {
   background: repeating-linear-gradient(transparent, transparent 42px, darkgray 44px), repeating-linear-gradient(90deg, transparent, transparent 42px, darkgray 44px);
@@ -163,6 +170,7 @@ button {
 .goodsbox {
   background-color: white;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .goodsbox__header {
@@ -224,5 +232,151 @@ button {
 
 .good--button:active {
   background-color: dimgray;
+}
+
+.hamburgerMaker {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.hamburgerMaker__header {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 30px;
+}
+
+.hamburgerMaker__chooseSize {
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.hamburgerMaker__chooseSize p {
+  margin-bottom: 20px;
+}
+
+.hamburgerMaker__chooseSize div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburgerMaker__chooseSize div label {
+  margin-bottom: 10px;
+}
+
+.hamburgerMaker__chooseSize--radioHandler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hamburgerMaker__chooseSize--presenter {
+  margin-top: 50px;
+  font-size: 200px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hamburgerMaker__chooseAdditional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hamburgerMaker__chooseAdditional .hamburgerMaker__chooseAdditional--checkboxHandler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 639px;
+  margin-bottom: 50px;
+}
+
+.hamburgerMaker__chooseAdditional__mustHave,
+.hamburgerMaker__chooseAdditional__mustNotHave {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburgerMaker__chooseAdditional__mustHave p,
+.hamburgerMaker__chooseAdditional__mustNotHave p {
+  border-bottom: 1px solid grey;
+  margin-bottom: 5px;
+}
+
+.hamburgerMaker__chooseAdditional__mustHave label,
+.hamburgerMaker__chooseAdditional__mustNotHave label {
+  margin-bottom: 10px;
+}
+
+.hamburgerMaker__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hamburgerMaker__total__handler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 639px;
+}
+
+#makeOrder {
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#makeOrder:hover {
+  background-color: #a3e9a3;
+}
+
+#makeOrder:active {
+  background-color: #68e768;
 }
 /*# sourceMappingURL=style.css.map */
