@@ -109,7 +109,6 @@ console.log(goodsManager.totalPrice);
 //приятно осознавать, что я начинаю что-то понимать. до этой реализации, которая имеется сейчас я дошел без методички. какого же было мое удивление, что я попал по всем пунктам в точку О_о
 
 /********************************/
-let element = document.getElementById("mayo");
 class HamburgerMaker {
     constructor() {
         this._presenter = document.querySelector('.hamburgerMaker__chooseSize--presenter');
