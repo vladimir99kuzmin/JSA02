@@ -130,7 +130,7 @@ class HamburgerMaker {
         document.onclick = event => {
             this._food.forEach(e => {
                 for (let key in e) { //знаю, что так делать некрасиво, но let key of e у меня почему-то не итерабельно ¯\_(ツ)_/¯
-                    element = e[key];
+                    let element = e[key];
                     element.add = document.getElementById(key).checked;
                 }
             });
@@ -150,7 +150,7 @@ class HamburgerMaker {
             let totalCalorie = 0;
             this._food.forEach(e => {
                 for (let key in e) {
-                    element = e[key];
+                    let element = e[key];
                     if (element.add) {
                         totalPrice += element.price;
                         totalCalorie += element.calorie;
